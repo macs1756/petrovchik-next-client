@@ -1,6 +1,6 @@
 
 const domain = 'http://localhost:3000/'
-const current_language = ''
+const current_language = 'uk'
 
 export const HOME_PAGE = domain + '/'
 export const WORK_CATALOG = domain + '/work/'
