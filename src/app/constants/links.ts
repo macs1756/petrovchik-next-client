@@ -2,7 +2,7 @@
 const domain = 'http://localhost:3000/'
 const current_language = 'uk'
 
-export const HOME_PAGE = domain + '/'
+export const HOME_PAGE = domain + ''
 export const WORK_CATALOG = domain + '/work/'
 export const DWELLING_CATALOG = domain + '/dwelling/'
 export const BUSINESS_CATALOG = domain + '/business/'
