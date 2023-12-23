@@ -9,9 +9,9 @@ export default function HeaderSearch() {
 
 
   return (
-    <div className='border-2 border-solid border-gray-800 rounded-[8px] w-[240px] h-[45px] relative'>
+    <div className='border-2 border-solid border-gray-800 rounded-[8px] w-[240px] h-[45px] relative hover:tra' >
       <input 
-      className='rounded-[8px] w-full h-full pl-[12px] text-[14px] '
+      className='rounded-[8px] w-full h-full pl-[12px] text-[14px] pr-[40px]'
       type="text" 
       value={searchValue}
       onChange={(e) => {setSearchValue(e.target.value)}}
@@ -19,7 +19,7 @@ export default function HeaderSearch() {
        />
 
        <Link
-
+        className='absolute top-[calc(50%-10px)] right-[10px] z-10'
         href={ SEARCH + searchValue } >
           <Image 
           width={20}
