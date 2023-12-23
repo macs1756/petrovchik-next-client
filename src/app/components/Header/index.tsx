@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
-import { HOME_PAGE } from '../../constants/links'
-import { NAVBAR_LINKS } from '@/app/constants/navbar'
+import { HOME_PAGE } from '../../../constants/links'
+import { NAVBAR_LINKS } from '@/constants/navbar'
 
 export default function Header (){
 

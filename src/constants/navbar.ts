@@ -1,5 +1,5 @@
 import { InavbarLink } from "../types"
-import { WORK_CATALOG, DWELLING_CATALOG, BUSINESS_CATALOG, BLOG_CATALOG } from '../constants/links'
+import { WORK_CATALOG, DWELLING_CATALOG, BUSINESS_CATALOG, BLOG_CATALOG } from './links'
 
 export const NAVBAR_LINKS: InavbarLink[] = [
   {
