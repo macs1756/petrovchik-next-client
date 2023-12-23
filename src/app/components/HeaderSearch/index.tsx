@@ -1,4 +1,7 @@
+import Link from 'next/link'
 import * as React from 'react'
+import { SEARCH } from '@/constants/links'
+import Image from 'next/image'
 
 export default function HeaderSearch() {
 
@@ -6,7 +9,7 @@ export default function HeaderSearch() {
 
 
   return (
-    <div className='border-2 border-solid border-gray-800 rounded-[8px] w-[240px] h-[45px]'>
+    <div className='border-2 border-solid border-gray-800 rounded-[8px] w-[240px] h-[45px] relative'>
       <input 
       className='rounded-[8px] w-full h-full pl-[12px] text-[14px] '
       type="text" 
@@ -14,6 +17,18 @@ export default function HeaderSearch() {
       onChange={(e) => {setSearchValue(e.target.value)}}
       placeholder='Пошук'
        />
+
+       <Link
+
+        href={ SEARCH + searchValue } >
+          <Image 
+          width={20}
+          height={20}
+          src='/header__search.svg'
+          alt='header logo'
+       />
+       </Link>
+
     </div>
   )
 }
