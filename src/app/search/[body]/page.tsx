@@ -1,6 +1,7 @@
-import { useRouter } from "next/navigation"
+import { IpropsSearchPage } from "@/types"
 
-export default function Search({ params }: { params: { body: string } } ) {  
+
+export default function Search({ params }: IpropsSearchPage) {  
     return(
       <div>Search on {params.body}</div>
     )
