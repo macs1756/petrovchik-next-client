@@ -40,7 +40,7 @@ export default function Header (){
           </div>
 
 
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center gap-[12px]">
               <HeaderSearch />
           </div>
 
