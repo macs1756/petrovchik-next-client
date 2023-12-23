@@ -4,6 +4,7 @@ import Link from "next/link"
 import { HOME_PAGE } from '@/constants/links'
 import { NAVBAR_LINKS } from '@/constants/navbar'
 import { usePathname } from 'next/navigation'
+import HeaderSearch from "../HeaderSearch"
 
 
 
@@ -29,14 +30,20 @@ export default function Header (){
             {
               NAVBAR_LINKS.map((e, i)=>(
                 <li 
-                className={e?.url.includes(path) ? 'font-bold' : ''}
-                key={e?.text + i}><Link 
+                className={path.length > 1 && e?.url.includes(path) ? 'font-bold' : ''}
+                key={e?.text + i}><Link
                 href={e?.url} >{e?.text}</Link></li>
               ))
             }
           </ul>
 
           </div>
+
+
+          <div className="flex items-center justify-center">
+              <HeaderSearch />
+          </div>
+
       </div>  
     </header>
   )
