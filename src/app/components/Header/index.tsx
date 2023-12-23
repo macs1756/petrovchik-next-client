@@ -1,11 +1,16 @@
+'use client'
 import Image from "next/image"
 import Link from "next/link"
-import { HOME_PAGE } from '../../../constants/links'
+import { HOME_PAGE } from '@/constants/links'
 import { NAVBAR_LINKS } from '@/constants/navbar'
+import { usePathname } from 'next/navigation'
+
+
 
 export default function Header (){
 
-  
+  const path =  usePathname()
+   
   return(
     <header>
       <div className="content flex items-center justify-between">
@@ -23,7 +28,10 @@ export default function Header (){
             
             {
               NAVBAR_LINKS.map((e, i)=>(
-                <li key={e?.text + i}><Link href={e?.url} >{e?.text}</Link></li>
+                <li 
+                className={e?.url.includes(path) ? 'font-bold' : ''}
+                key={e?.text + i}><Link 
+                href={e?.url} >{e?.text}</Link></li>
               ))
             }
           </ul>
