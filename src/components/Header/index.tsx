@@ -42,7 +42,9 @@ export default function Header (){
 
 
           <div className="flex items-center justify-end gap-[12px]">
+            
               <HeaderSearch />
+
               <HeaderModalForCreatedNewElement />
 
               <button className="flex items-center gap-1 ml-[10px]">
