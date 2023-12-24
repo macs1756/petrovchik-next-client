@@ -1,5 +1,6 @@
 import { headerModalElements } from "@/constants/header.modal"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function HeaderModalForCreatedNewElement() {
   return(
@@ -22,7 +23,8 @@ export default function HeaderModalForCreatedNewElement() {
           <div className="grid gap-[24px] grid-cols-3">
               {
                 headerModalElements.map( (e, i) => (
-                    <div
+                    <Link 
+                     href={e?.link}
                      key={e?.text + i}
                      className='bg-white rounded-[15px] flex justify-center flex-col items-center py-[32px] tr hover:transform hover:translate-y-[-16px]'
                      >
@@ -37,7 +39,7 @@ export default function HeaderModalForCreatedNewElement() {
 
                         <p className="text-[#1C1C1C] text-[24px] font-bold">{e?.text}</p>
 
-                    </div>
+                    </Link>
                 ))
               }
           </div>
