@@ -44,6 +44,17 @@ export default function Header (){
           <div className="flex items-center justify-end gap-[12px]">
               <HeaderSearch />
               <HeaderModalForCreatedNewElement />
+
+              <button className="flex items-center gap-1 ml-[10px]">
+                <Image
+                width={20}
+                height={24}
+                src='/header__language.svg'
+                alt="header language"
+                 />
+                <span>RU</span>
+              </button>
+
           </div>
           
 
