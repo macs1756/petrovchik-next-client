@@ -17,14 +17,14 @@ export default function HeaderModalForCreatedNewElement() {
              className='absolute top-[16px] right-[16px]'
            />
 
-          <h2 className="text-[40px] mb-[40px] text-center">Додати оголошення</h2>
+          <h2 className="text-[40px] mb-[50px] text-center">Додати оголошення</h2>
 
           <div className="grid gap-[24px] grid-cols-3">
               {
                 headerModalElements.map( (e, i) => (
                     <div
                      key={e?.text + i}
-                     className='bg-white rounded-[15px] flex justify-center flex-col items-center py-[32px]'
+                     className='bg-white rounded-[15px] flex justify-center flex-col items-center py-[32px] tr hover:transform hover:translate-y-[-16px]'
                      >
 
                         <Image

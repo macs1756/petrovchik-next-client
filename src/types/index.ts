@@ -11,4 +11,5 @@ export interface IpropsSearchPage{
 export interface IheaderElement {
     image: string,
     text: string,
+    link: string
 }
