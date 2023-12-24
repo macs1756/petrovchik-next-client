@@ -7,3 +7,8 @@ export interface InavbarLink{
 export interface IpropsSearchPage{
      params: { body: string }  
 }
+
+export interface IheaderElement {
+    image: string,
+    text: string,
+}
