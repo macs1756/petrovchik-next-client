@@ -4,7 +4,8 @@ import Link from "next/link"
 import { HOME_PAGE } from '@/constants/links'
 import { NAVBAR_LINKS } from '@/constants/navbar'
 import { usePathname } from 'next/navigation'
-import HeaderSearch from "../HeaderSearch"
+import HeaderSearch from "@/components/HeaderSearch"
+import HeaderModalForCreatedNewElement from "../HeaderModalForCreatedNewElement"
 
 
 
@@ -40,9 +41,11 @@ export default function Header (){
           </div>
 
 
-          <div className="flex items-center justify-center gap-[12px]">
+          <div className="flex items-center justify-end gap-[12px]">
               <HeaderSearch />
+              <HeaderModalForCreatedNewElement />
           </div>
+          
 
       </div>  
     </header>

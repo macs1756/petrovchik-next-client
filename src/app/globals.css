@@ -25,7 +25,7 @@ body {
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
-
+  line-height: 120%;
 }
 
 header, footer {

@@ -20,7 +20,7 @@ export default function HeaderSearch() {
 
        <Link
         className='absolute top-[calc(50%-10px)] right-[10px] z-10 hover:transform hover:-rotate-12 tr'
-        href={ SEARCH + searchValue } >
+        href={ SEARCH + 'location/' +searchValue } >
           <Image 
           width={20}
           height={20}
