@@ -24,7 +24,7 @@ export default function HeaderModalForCreatedNewElement() {
                 headerModalElements.map( (e, i) => (
                     <div
                      key={e?.text + i}
-                     className='bg-white rounded-[15px]'
+                     className='bg-white rounded-[15px] flex justify-center flex-col items-center py-[32px]'
                      >
 
                         <Image
@@ -32,9 +32,11 @@ export default function HeaderModalForCreatedNewElement() {
                         height={70}
                         src={e?.image}
                         alt={e?.text}
+                        className='mb-[20px]'
                          />
 
-                        <p>{e?.text}</p>
+                        <p className="text-[#1C1C1C] text-[24px] font-bold">{e?.text}</p>
+
                     </div>
                 ))
               }
